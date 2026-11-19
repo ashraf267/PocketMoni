@@ -65,7 +65,7 @@ This project designs and builds a production-ready native Android vertical slice
 ```sql
 CREATE TABLE IF NOT EXISTS public.transactions (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-    merchant_id TEXT NOT NULL DEFAULT 'MERCHANT_ETR_1001',
+    merchant_id TEXT NOT NULL DEFAULT 'MERCHANT_ETR_2067',
     amount NUMERIC(12, 2) NOT NULL,
     sender_name TEXT NOT NULL,
     reference TEXT NOT NULL,
@@ -84,9 +84,9 @@ Open `SupabaseConfig.kt` (`app/src/main/java/com/theonlyashraf/pocketmoni/data/S
 
 ```kotlin
 object SupabaseConfig {
-    const val SUPABASE_URL: String = "YOUR_SUPABASE_PROJECT_URL"
+    const val SUPABASE_URL: String = "https://your-project-id.supabase.co"
     const val SUPABASE_ANON_KEY: String = "YOUR_SUPABASE_ANON_KEY"
-    const val DEFAULT_MERCHANT_ID: String = "MERCHANT_ETR_1001"
+    const val DEFAULT_MERCHANT_ID: String = "MERCHANT_ETR_2067"
 }
 ```
 
@@ -97,7 +97,18 @@ object SupabaseConfig {
 2. Tap **"Simulate Transfer & Play Alert 🔔"**.
 3. Hear the instant credit chime and watch the transaction appear in real-time both on the screen and in your Supabase `transactions` table!
 
-<img width="1536" height="971" alt="Screenshot 2026-11-10 at 15 49 30" src="https://github.com/user-attachments/assets/d721cf1c-1d5e-42ae-ba51-862444ecb90c" />
+---
 
-[Screen_recording_20261119_115523-2.webm](https://github.com/user-attachments/assets/f5790227-a786-40d2-a52a-6f6cd0879c26)
+## 7. Demo & User Feedback Proof
 
+### 💬 Google Play Store Merchant Feedback
+Below is the live user review from a PocketMoni merchant on the Google Play Store requesting instant acoustic notifications similar to Moniepoint:
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/d721cf1c-1d5e-42ae-ba51-862444ecb90c" alt="PocketMoni Play Store Customer Complaint" width="700"/>
+</p>
+
+### 🎥 Live PoC Demo Video
+Demonstration of instant credit audio alert and real-time WebSocket sync with Supabase:
+
+https://github.com/user-attachments/assets/f5790227-a786-40d2-a52a-6f6cd0879c26
