@@ -16,7 +16,7 @@ data class Transaction(
     val id: String = UUID.randomUUID().toString(),
 
     @SerialName("merchant_id")
-    val merchantId: String = "MERCHANT_ETR_1001",
+    val merchantId: String = "MERCHANT_ETR_2067",
 
     @SerialName("amount")
     val amount: Double,

@@ -16,8 +16,8 @@ import kotlinx.coroutines.launch
  * UI State for the Merchant Dashboard.
  */
 data class MerchantDashboardUiState(
-    val merchantName: String = "eTranzact Agent Terminal #1001",
-    val merchantId: String = "MERCHANT_ETR_1001",
+    val merchantName: String = "eTranzact Agent Terminal #2067",
+    val merchantId: String = "MERCHANT_ETR_2067",
     val walletBalance: Double = 185000.00,
     val isRealtimeConnected: Boolean = true,
     val transactions: List<Transaction> = listOf(
