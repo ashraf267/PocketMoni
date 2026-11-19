@@ -96,3 +96,8 @@ object SupabaseConfig {
 1. Build and run the app on an Android device or emulator.
 2. Tap **"Simulate Transfer & Play Alert 🔔"**.
 3. Hear the instant credit chime and watch the transaction appear in real-time both on the screen and in your Supabase `transactions` table!
+
+<img width="1536" height="971" alt="Screenshot 2026-11-10 at 15 49 30" src="https://github.com/user-attachments/assets/d721cf1c-1d5e-42ae-ba51-862444ecb90c" />
+
+[Screen_recording_20261119_115523-2.webm](https://github.com/user-attachments/assets/f5790227-a786-40d2-a52a-6f6cd0879c26)
+
